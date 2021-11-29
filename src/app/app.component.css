@@ -1,0 +1,135 @@
+
+body{
+  background: black;
+}
+.box_presentation{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e8faf2108487011.5fbea2fdbaf5f.jpg");
+    background-position: center center;
+    /* position: relative; */
+    /* overflow: hidden; */
+     width:100%; 
+     height:100vh;
+
+    }
+  #mask{
+    background-color: rgba(20, 46, 90, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+   /* position: absolute; */
+}
+@media (max-width: 1279px) {
+    .box_description{
+      text-align: center;
+    }
+    .caja_avatar{
+      justify-content: center !important;
+    }
+   .box_presentation{
+    height:100vh;
+   }
+  }
+  @media (min-width: 1280px) {
+    .box_presentation{
+      height:80vh;
+    }
+    .caja_avatar{
+      z-index: 1;
+      justify-content: end ;
+    }
+  }
+  
+  .white{
+     color: rgb(255, 255, 255); 
+  }
+  .title_nombre{
+    color:#11ECE5;
+  }
+  .caja_avatar{
+    width:100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  
+  .avatar_img{
+    position: absolute;
+    /* size:336px; */
+    border-radius: 50%;
+    margin: 55px;
+   }
+ 
+   
+  #FondoAvatarverde {
+    position: relative;
+    -webkit-animation: fondoAvatarverde_width_height 2s  infinite ease-in-out;
+    animation: fondoAvatarverde_width_height 2s  infinite ease-in-out;
+  
+  }
+  #FondoAvatarAzul {
+  position: absolute;
+    -webkit-animation: fondoAvatarverde_width_height 2s  infinite ease-in-out;
+    animation: FondoAvatarAzul_width_height 2s  infinite ease-in-out;
+  
+  }
+
+  @keyframes fondoAvatarverde_width_height{
+    0%,100% {
+        transform: initial;
+        -webkit-transform: initial;
+       
+      }
+   50% {
+    transform: translate(-1.5%,-1.5%) scale(104%) ;
+    -webkit-transform: translate(-1.5%,-1.5%) scale(104%);
+        
+      }
+
+  }
+  @keyframes FondoAvatarAzul_width_height{
+    0%,100% {
+ 
+        transform: translate(-1.5%,-1.5%) scale(104%) ;
+        -webkit-transform: translate(-1.5%,-1.5%) scale(104%);
+      }
+   50% {
+    transform: initial;
+    -webkit-transform: initial;
+        
+      }
+
+  }
+
+  .btn_social_media{
+    margin-left: 20px;
+    margin-right: 20px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: white;
+   background-color: transparent;
+} 
+
+.cv{
+  margin-left: 20px;
+  margin-right: 20px;
+ border-width: 3px;
+ border-style: solid;
+ border-color: #11ECE5;
+
+ background-color: transparent;
+} 
+  .img_social_media{
+    height: 35px ;
+   }
+
+.button_ver_cv{
+    border-width: 1px;
+  border-style: solid;
+  border-color: #11ECE5;
+  color: white;
+  font-size: 20px;
+  }

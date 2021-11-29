@@ -1,0 +1,68 @@
+.paragraph{
+    text-align: justify; 
+ }
+
+
+ 
+#Vector_46 ,#Vector_41,#Vector_42,#Vector_43,#Vector_44,#Vector_45{
+    transform:translate(0,-7%);
+    animation: data 2s .5s  infinite;
+}
+#Vector_36 ,#Vector_37,#Vector_38,#Vector_39,#Vector_40{  
+    stroke: #11ECE5; 
+    stroke-width:8px ;
+     transform: scale(1,1.05);
+   transform-origin:left;
+   animation: data 2s .5s  infinite;
+}
+
+#Vector_9,#Vector_33{
+    transform:translate(1.1%,0%);
+   animation: data 1.5s .3s  infinite;
+}
+/* #body =>Vector_10,11,12 */
+#arm,#head,#Vector_12, #Vector_6,#Vector_5{
+    transform: rotate(-0.4deg);   
+    animation: data 1.5s .4s  infinite;
+   }
+
+   /* dashboards  donu*/
+   #Vector_19,#Vector_20,#Vector_21,#Vector_22,#Vector_23,#Vector_24 ,#Vector_25, #Vector_26{
+    transform:translate(0,-03%);
+    animation: data 1.5s .3s  infinite;
+}
+   /*caja del brazo  */
+#Vector_27,#Vector_28{
+    transform:translate(1.1%,0%);
+    animation: data 1.5s .3s  infinite;
+}
+   #Vector_10{
+    transform: translate(0,1.05%); 
+    animation: data 1.5s .4s  infinite; 
+   }
+
+@keyframes data {
+    50% {
+        transform: initial;
+        -webkit-transform: initial;
+            
+         }
+}
+
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+/* 
+#head{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+} */
+
+.ilustration{
+display: block;
+}

@@ -1,0 +1,13 @@
+.title_skills{
+    color:white;
+    font-size: 50px;
+}
+
+.skills_soft{
+    -webkit-text-stroke: 1px white; /* width and color */
+    color: black;
+    font-size: 35px;
+}
+.logo_skill{
+    height: 55px;
+}

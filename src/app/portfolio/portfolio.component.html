@@ -1,0 +1,26 @@
+<div class="container text-center background_projects py-3">
+    <h1 class="title_projects">Proyectos 2020-2021</h1>
+  <div class="row  justify-content-center gy-5 gx-5 my-0 my-md-3" style="
+  margin-right: 0px;
+  margin-left: 0px;">
+    <div class=" card col-10 col-md-5 text-center p-0 card-project mx-md-4 mx-0" *ngFor="let project of projects" >
+      <div class="card-header ">
+        <h2 class="m-2">{{project.title}}</h2>
+      </div>
+      <img class="card-img-top" width="280" height="auto" [src]="project.url_background"  alt=""> 
+    <div class="card-footer">
+     <div class="card-text text-center">
+      <a target="_blank"  [href]="project.url_github"   class="btn btn_github" >
+        <img  class="img_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+     </a>
+    </div> 
+        <div class="row justify-content-center  mt-3">
+            <div class="col-4" *ngFor="let tech of project.technologies">
+              <img  class="logo_tech" [src]="tech.url_tech" alt=""> 
+              <p style="color:white">{{tech.description}}</p>    
+            </div>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>

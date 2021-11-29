@@ -1,0 +1,14 @@
+<div  class="container-fluid" style=" text-align: center; background-color:#2C3434 ;">
+    <h1 class="title_skills">Habilidades Blandas</h1>
+    <span class="skills_soft" >Ética en el trabajo</span><br>
+    <span class="skills_soft" >Integridad</span><br>
+    <span class="skills_soft" >Trabajo en Equipo</span><br>
+    <span class="skills_soft" >Responsabilidad</span>   <br>   
+    <h1 class="title_skills">Habilidades Duras</h1>
+    <div class="row" >
+        <div class=" col-3 col-md-2 p-0"   *ngFor="let logo of logos">
+                <img  class="logo_skill" [src]="logo.url_tech" alt="">                  
+             <p style="color:white">{{logo.description}}</p>
+        </div>
+    </div>
+</div>
