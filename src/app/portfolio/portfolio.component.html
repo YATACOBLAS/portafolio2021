@@ -9,18 +9,40 @@
       </div>
       <img class="card-img-top" width="280" height="auto" [src]="project.url_background"  alt=""> 
     <div class="card-footer">
-     <div class="card-text text-center">
-      <a target="_blank"  [href]="project.url_github"   class="btn btn_github" >
-        <img  class="img_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+     <div class="d-flex justify-content-between card-text text-center pb-1" style="border-bottom: solid 1px white;">
+      <a target="_blank"  [href]="project.url_github"   class="btn btn_github"  style="color: black;font-weight: bold;"> Ver en Github
+      <img class="img_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
      </a>
+     <button class="btn btn_github font-weight-bold" style="color: black;font-weight: bold;" (click)="triggerModal(modalData,project.description )">
+        Descripcion<img  class="img_github" src="https://cdn0.iconfinder.com/data/icons/communication-thick-true-line-black-and-white/64/comment-text-message-bubble-512.png" alt="">
+     </button>
     </div> 
-        <div class="row justify-content-center  mt-3">
-            <div class="col-4" *ngFor="let tech of project.technologies">
-              <img  class="logo_tech" [src]="tech.url_tech" alt=""> 
-              <p style="color:white">{{tech.description}}</p>    
-            </div>
-        </div>
+     <div class="row justify-content-center pt-1">
+      <h4 style="  color: #11ECE5;" >Tecnologías</h4>
+         <div class="col-4 col-md-3 mt-3" *ngFor="let tech of project.technologies">
+            <img  class="logo_tech" [src]="tech.url_tech" alt=""> 
+         </div>
+      </div>
     </div>
   </div>
  </div>
 </div>
+
+
+<ng-template #modalData let-modal >
+  <div class="modal-header card-project text-center">
+    <h4 class="modal-title" id="modal-basic-title" style="  color: #11ECE5;">Descripción</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body card-project" style="color: white;">
+    <p>{{description}}
+    </p>
+  </div>
+  <div class="modal-footer card-project">
+    <button class="btn btn_github font-weight-bold" style="color: black;font-weight: bold;"(click)="modal.close('Save click')">
+     Cerrar
+   </button>
+  </div>
+</ng-template>

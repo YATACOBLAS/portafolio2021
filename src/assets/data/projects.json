@@ -1,5 +1,6 @@
 [{
     "title":"Exámenes Clínicos",
+    "description":"Es sistema fue echo con el propósito de realizar la trazabilidad de los exámenes clínicos del Policlínico PAMS de Chincha - Peru solucionando dficultades y siendo parte de la mejora indirecta  del servicio de los pacientes www.examenespams.xyz",
     "url_background":"../../../assets/images/examenesClinicos.png",
     "url_github":"https://github.com/YATACOBLAS/ExamenTrazabilidadPams",
     "technologies":[
@@ -14,7 +15,7 @@
                     "description":"Vue js"
                   },
                   {
-                    "url_tech":"https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png",
+                    "url_tech":"http://pngimg.com/uploads/mysql/mysql_PNG23.png",
                     "description":"Mysql"
                   },
                   {
@@ -26,25 +27,10 @@
                     "description":"VM Azure"
                   }
                   ]
-   },{
-    "title":"Fixblue Web",
-    "url_background":"../../../assets/images/fixblue_web.png",
-    "url_github":"https://github.com/YATACOBLAS/firstproyect",
-    "technologies":[
-                {
-                "url_tech":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png",
-                "description":"Bootstrap"
-                  },{
-                    "url_tech":"https://icon-library.com/images/js-icon/js-icon-13.jpg",
-                    "description":"Node.js"
-                  },{
-                    "url_tech":"https://ejspr.com/app/uploads/2021/03/EJS-Monogram_Grass-Green_High-Res.png",
-                    "description":"ejs"
-                  }
-                  ]
-    },
+   },
       {
         "title":"Registro de Servicios",
+        "description":"Es sistema fue echo con el propósito de de administrar las ventas de productos y servicios a los clientes de la empresa Fixblue",
         "url_background":"../../../assets/images/registroventa.png",
         "url_github":"https://github.com/YATACOBLAS/RegistroServiciosFixblue",
         "technologies":[{
@@ -65,6 +51,7 @@
       },
       {
         "title":"CRUD TarjetaDeCredito",
+        "description":"  El propósito de esta aplicación fue poner en practica mis conocimientos de Angular mediante el pequeño CRUD de tarjetas de credito",
         "url_background":"../../../assets/images/tarjetaDeCredito.png",
         "url_github":"https://github.com/YATACOBLAS/registroTarjetaDeCredito",
         "technologies":[{
@@ -78,23 +65,9 @@
                         "description":"Angular"
                       }
                       ]
-      }, {
-        "title":"Bot VentaCalzado",
-        "url_background":"../../../assets/images/chatbot.png",
-        "url_github":"https://github.com/YATACOBLAS/Chatbot_VentaCalzados",
-        "technologies":[{
-            "url_tech":"data:image/png;base64,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",
-            "description":"Bootswatch"
-                      },{
-                        "url_tech":"https://cdn.buttercms.com/w8lc0UqsQCnPG0Ax6aiM",
-                        "description":"Flask"
-                      },{
-                        "url_tech":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
-                        "description":"Vue js"
-                      }
-        ]
       },{
         "title":"OxiMapa",
+        "description":"  El propósito de esta aplicación era primera que las personas encuentren oxigeno a un radio especifico de su ubicacion , pero se realizo una pequeña red de contactos en donde puedes ver como se mueve otras persona dentro de tu radio en tiempo real",       
         "url_background":"../../../assets/images/oximap.png",
         "url_github":"https://github.com/YATACOBLAS/Chatbot_VentaCalzados",
         "technologies":[{
@@ -108,5 +81,39 @@
                       "description":"Firebase"}
                       
         ]
-      } 
+      },{
+        "title":"Fixblue Web",
+        "description":"El proyecto fue echo con el proposito de exapndir al imagen de la empresa Fixblue a través de una página web www.fixblueperu.com",
+        "url_background":"../../../assets/images/fixblue_web.png",
+        "url_github":"https://github.com/YATACOBLAS/firstproyect",
+        "technologies":[
+                    {
+                    "url_tech":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png",
+                    "description":"Bootstrap"
+                      },{
+                        "url_tech":"https://icon-library.com/images/js-icon/js-icon-13.jpg",
+                        "description":"Node.js"
+                      },{
+                        "url_tech":"https://ejspr.com/app/uploads/2021/03/EJS-Monogram_Grass-Green_High-Res.png",
+                        "description":"ejs"
+                      }
+                      ]
+        },
+        {
+          "title":"Bot VentaCalzado",
+          "description":" El propósito de esta aplicación era apoyar a una tienda de zapatillas a vender sus productos en linea a partir de un bot ",        
+          "url_background":"../../../assets/images/chatbot.png",
+          "url_github":"https://github.com/YATACOBLAS/Chatbot_VentaCalzados",
+          "technologies":[{
+              "url_tech":"data:image/png;base64,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",
+              "description":"Bootswatch"
+                        },{
+                          "url_tech":"https://cdn.buttercms.com/w8lc0UqsQCnPG0Ax6aiM",
+                          "description":"Flask"
+                        },{
+                          "url_tech":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
+                          "description":"Vue js"
+                        }
+          ]
+        }
  ] 

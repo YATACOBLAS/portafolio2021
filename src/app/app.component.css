@@ -12,7 +12,7 @@ body{
 
     }
   #mask{
-    background-color: rgba(20, 46, 90, 0.5);
+    background-color: rgba(20, 46, 90, 0.7);
     height: 100%;
     width: 100%;
     top: 0;
@@ -114,6 +114,7 @@ body{
 } 
 
 .cv{
+  color:white;
   margin-left: 20px;
   margin-right: 20px;
  border-width: 3px;
@@ -121,6 +122,10 @@ body{
  border-color: #11ECE5;
 
  background-color: transparent;
+} 
+.cv:hover {
+ background-color:#11ECE5;
+  color:rgba(20, 46, 90);
 } 
   .img_social_media{
     height: 35px ;
