@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+//por motibo de agregar src de video
+
+
 import { BrowserModule } from '@angular/platform-browser';
 //common angular
 import { HttpClientModule } from '@angular/common/http';

@@ -7,11 +7,16 @@
       <div class="card-header ">
         <h2 class="m-2">{{project.title}}</h2>
       </div>
-      <img class="card-img-top" width="280" height="auto" [src]="project.url_background"  alt=""> 
+      <img  *ngIf="project.url_video.length==0" class="card-img-top" width="280" height="auto" [src]="project.url_background"  alt="">
+      <video *ngIf="project.url_video.length>0" width="auto" height="auto"  autoplay="autoplay" controls>
+        <source [src]="project.url_video" type="video/mp4">
+        Your browser does not support HTML video.
+      </video> 
     <div class="card-footer">
      <div class="d-flex justify-content-between card-text text-center pb-1" style="border-bottom: solid 1px white;">
       <a target="_blank"  [href]="project.url_github"   class="btn btn_github"  style="color: black;font-weight: bold;"> Ver en Github
       <img class="img_github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+      
      </a>
      <button class="btn btn_github font-weight-bold" style="color: black;font-weight: bold;" (click)="triggerModal(modalData,project.description )">
         Descripcion<img  class="img_github" src="https://cdn0.iconfinder.com/data/icons/communication-thick-true-line-black-and-white/64/comment-text-message-bubble-512.png" alt="">
